@@ -1,0 +1,4 @@
+title = 'Hugo HTML Module'
+
+[[module.imports]]
+path = "github.com/razonyang/hugo-mod-html"

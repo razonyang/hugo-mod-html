@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>{{ .Site.Title }}</title>
+    <style>
+      .main {
+        display: flex;
+        position: relative;
+      }
+      .content {
+        flex: 1;
+      }
+      .toc {
+        width: 240px;
+      }
+      #TableOfContents {
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{ .Site.Title }}</h1>
+    <div class="main">
+      <div class="content">
+        {{ .Content }}
+      </div>
+      <div class="toc">
+        {{ .TableOfContents }}
+      </div>
+    </div>
+  </body>
+</html>
